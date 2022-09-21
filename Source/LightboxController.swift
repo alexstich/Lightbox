@@ -436,7 +436,7 @@ extension LightboxController: HeaderViewDelegate {
           let delete_action = UIAlertAction(title: LightboxConfig.DeleteButton.bottomConfirmationText, style: .destructive, handler: { [weak self] _ in self?.deleteImage(deleteButton: deleteButton) })
           alertController.addAction(delete_action)
           
-          let cancel_action = UIAlertAction(title: nil, style: .cancel, handler: nil)
+          let cancel_action = UIAlertAction(title: NSLocalizedString("Cancel", comment: ""), style: .cancel, handler: nil)
           alertController.addAction(cancel_action)
           
           self.present(alertController, animated: true, completion: nil)
