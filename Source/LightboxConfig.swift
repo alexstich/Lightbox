@@ -83,6 +83,9 @@ public class LightboxConfig {
         return style
       }()
     ]
+    
+    public static var showBottomConfirmationMenu = false
+    public static var bottomConfirmationText = NSLocalizedString("Delete", comment: "")
   }
 
   public struct InfoLabel {
